@@ -73,6 +73,14 @@ nav ul li a {
   /* Negrita */
 }
 
+nav ul :hover {
+  background-color: #3d3c3c;
+  padding: 2px;
+  border-radius: 2px;
+  /* Efecto al pasar el mouse */
+}
+
+
 .arriba {
   display: inline-block;
   /* Para poder aplicar padding y márgenes */

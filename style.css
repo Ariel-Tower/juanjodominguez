@@ -1,0 +1,492 @@
+/* Fuente predeterminada del sitio */
+body {
+
+  font-family: 'Merriweather', serif;
+
+
+  margin: 0;
+  /* Elimina márgenes del navegador */
+  padding: 0;
+  /* Elimina relleno por defecto */
+}
+
+/* Estilo para el encabezado de la página */
+header {
+  background-color: #222;
+  /* Fondo Oscuro */
+  color: white;
+  /* Texto blanco */
+  padding: 20px;
+  /* Espacio interior */
+  text-align: center;
+  /* Centra el texto */
+
+}
+
+h1 {
+  font-family: 'Lucida Handwriting', cursive;
+  color: #e0dfdf;
+  font-size: 2em;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  
+}
+
+.inicial {
+  font-size: 150%;
+  font-weight: bold;
+  color: white;
+  font-family: 'Lucida Handwriting', cursive;
+}
+
+h2 {
+  
+  margin-top: 5px;
+  margin-bottom: 60px;
+  background-color: #f0f0f0; /* Gris claro */
+  padding: 10px;             /* Espaciado interno para que no quede apretado */
+  border-radius: 5px;
+  
+}
+
+/* Navegación en forma de lista horizontal */
+nav ul {
+  list-style: none;
+  /* Elimina viñetas */
+  padding: 0;
+  /* Elimina relleno */
+  display: flex;
+  /* Activa Flexbox */
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
+  gap: 20px;
+  /* Espacio entre los ítems de la lista */
+}
+
+/* Enlaces del menú */
+nav ul li a {
+  color: white;
+  /* Texto blanco */
+  text-decoration: none;
+  /* Sin subrayado */
+  font-weight: bold;
+  /* Negrita */
+}
+
+.arriba {
+  display: inline-block;
+  /* Para poder aplicar padding y márgenes */
+  background-color: #828d82;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+  padding: 10px 15px;
+  /* Espaciado interno */
+  text-decoration: none;
+  /* Quita el subrayado */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  margin-top: 20px;
+  /* Espacio con respecto al contenido anterior */
+  font-weight: bold;
+}
+
+.arriba:hover {
+  background-color: #a1c3a3;
+  /* Efecto al pasar el mouse */
+}
+
+.irainicio {
+  text-align: right;
+  padding: 10px 15px;
+}
+
+.img-inicio {
+  width: 50rem;
+
+}
+
+main {
+  padding: 20px;
+  background-color: #fdfdfd;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/* Estilo general para todas las secciones */
+section {
+  padding: 20px;
+  /* Espacio interior */
+  text-align: center;
+  /* Centra el texto */
+}
+
+/* Contenedor de discografía con Grid */
+.discografia-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Responsive */
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+  /* Centra los discos horizontalmente */
+}
+
+
+/* Estilo para cada álbum individual */
+.discografia {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+
+
+/* Imágenes de discografía */
+.album-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* LISTA DE TEMAS */
+.
+
+/* Estilo general para la lista ordenada */
+.lista-temas {
+  list-style-position: inside;
+  /* Números de la lista se colocan dentro del bloque del ítem */
+  padding-left: 0;
+  /* Elimina padding izquierdo extra */
+  max-width: 600px;
+  /* Limita el ancho de la lista para que no ocupe toda la pantalla */
+  margin: auto;
+  /* Centra la lista horizontalmente */
+}
+
+/* Estilo para cada elemento <li> de la lista */
+.lista-temas li {
+  display: flex;
+  /* Usa flexbox para alinear los elementos internos en fila */
+  justify-content: space-between;
+  /* Coloca los elementos (título y duración) separados por espacio */
+  padding: 4px 0;
+  /* Espaciado vertical entre ítems */
+  border-bottom: 1px dotted #ccc;
+  /* Línea punteada bajo cada ítem para separarlos visualmente */
+}
+
+/* Estilo para el nombre del tema (columna izquierda) */
+.titulo {
+  width: 70%;
+  /* Ocupa el 70% del ancho disponible */
+  white-space: nowrap;
+  /* No permite salto de línea */
+  overflow: hidden;
+  /* Oculta cualquier texto que se pase del ancho */
+  text-overflow: ellipsis;
+  /* Muestra "..." si el texto es demasiado largo */
+}
+
+/* Estilo para la duración del tema (columna derecha) */
+.duracion {
+  width: 20%;
+  /* Ocupa el 20% del ancho disponible */
+  text-align: right;
+  /* Alinea el texto a la derecha dentro del span */
+}
+
+/* VIDEO*/
+
+
+.video-container {
+  width: 760px;
+  /* Ancho fijo estándar YouTube */
+  height: 515px;
+  /* Alto fijo estándar YouTube */
+  margin: 20px auto;
+  /* Centrado horizontal con espacio arriba y abajo */
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container iframe {
+  width: 760px;
+  /* Mismo ancho fijo */
+  height: 515px;
+  /* Mismo alto fijo */
+  border: none;
+  display: block;
+}
+
+
+
+/* Estilo para el formulario */
+form {
+  display: flex;
+  /* Activa Flexbox */
+  flex-direction: column;
+  /* Coloca los elementos en columna */
+  gap: 10px;
+  /* Espacio entre campos */
+  max-width: 400px;
+  /* Ancho máximo */
+  margin: 0 auto;
+  /* Centrado horizontal */
+
+}
+
+/* Campos del formulario */
+input,
+textarea {
+  padding: 10px;
+  /* Espacio interior */
+  border: 3px solid #ccc;
+  /* Borde gris claro */
+  border-radius: 10px;
+  /* Bordes redondeados */
+}
+
+/* Botón del formulario */
+button {
+  padding: 10px;
+  /* Espacio interior */
+  background-color: #9daf4c;
+  /* Fondo verde */
+  color: white;
+  /* Texto blanco */
+  border: none;
+  /* Sin borde */
+  border-radius: 4px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima */
+}
+
+#formulario {
+
+  background-color: #f9f9f9;
+  /* Color de fondo claro */
+  border: 1px solid #ccc;
+  /* Borde gris */
+  padding: 50px;
+  /* Espacio interno */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  margin-top: 20px;
+  /* Espacio respecto al contenido anterior */
+
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #333;
+  /* Fondo oscuro */
+  color: white;
+  /* Texto blanco */
+  text-align: center;
+  /* Centrado de texto */
+  padding: 15px;
+  /* Espacio interior */
+  margin-top: 30px;
+  /* Separación del contenido anterior */
+  font-size: 1rem;
+}
+
+
+
+/* ===== FOOTER GENERAL ===== */
+footer {
+  background-color: #222;
+  /* Fondo oscuro elegante */
+  color: #fff;
+  /* Texto blanco */
+  text-align: center;
+  /* Centra el texto */
+  padding: 30px 15px;
+  /* Espaciado interno */
+  margin-top: 40px;
+  /* Separación del contenido anterior */
+  font-size: 1rem;
+}
+
+/* ===== MENÚ EN EL FOOTER ===== */
+footer nav ul {
+  list-style: none;
+  /* Quita viñetas */
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  /* Flexbox para alineación horizontal */
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* Se adapta si hay muchos elementos */
+}
+
+footer nav ul li a {
+  color: #fff;
+  /* Enlaces blancos */
+  text-decoration: none;
+  /* Sin subrayado */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  /* Transición suave al pasar el mouse */
+}
+
+footer nav ul li a:hover {
+  color: #4CAF50;
+  /* Verde al hacer hover */
+  text-decoration: underline;
+}
+
+/* ===== TEXTO DE COPYRIGHT O LEYENDAS ===== */
+footer p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+  /* Gris claro para meno*/
+}
+
+
+/* ===== REDES SOCIALES ===== */
+
+
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.redes-sociales img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.redes-sociales a:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+/* Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    /* Muestra los enlaces uno debajo del otro */
+    gap: 10px;
+    /* Menor espacio entre ellos */
+  }
+
+  .lista-temas {
+    font-size: 0.95em;
+    padding: 0 10px;
+  }
+
+  .lista-temas li {
+    flex-direction: column;
+    /* Apila título y duración */
+    align-items: flex-start;
+    /* Alinea a la izquierda */
+  }
+
+  .titulo,
+  .duracion {
+    width: 100%;
+    text-align: left;
+  }
+
+  .duracion {
+    font-size: 0.85em;
+    color: #666;
+  }
+
+  .img-inicio {
+    width: 20rem;
+
+  }
+
+  .lista-temas li {
+    flex-direction: column;
+    /* Cambia a diseño vertical en lugar de horizontal */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio */
+  }
+
+  .titulo,
+  .duracion {
+    width: 100%;
+    /* Ocupan todo el ancho disponible */
+    white-space: normal;
+    /* Permite saltos de línea si el texto es largo */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    overflow: visible;
+    /* Ya no es necesario recortar */
+    text-overflow: clip;
+    /* No muestra puntos suspensivos */
+  }
+
+  .duracion {
+    font-size: 0.9em;
+    /* Hace la duración un poco más chica */
+    color: #666;
+    /* Color más suave para que destaque menos */
+    margin-top: 4px;
+    /* Espacio entre título y duración */
+  }
+
+  .video-container {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    padding-top: 56.25%;
+    /* Relación de aspecto 16:9 (315/560 ≈ 0.5625) */
+    height: 0;
+    /* Se usa padding-top para crear altura proporcional */
+    position: relative;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ajuste total al contenedor */
+    height: 100%;
+    /* Idem */
+  }
+
+
+
+}
+
+
+/* Media Query para TABLETS (de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .discografia-container {
+    justify-content: space-evenly;
+    /* Distribuye los discos uniformemente */
+  }
+}
+
+/* Media Query para PC (más de 1024px) */
+@media (min-width: 1025px) {
+  .discografia-container {
+    justify-content: space-between;
+    /* Aumenta el espacio entre discos */
+  }
+}
